@@ -4,6 +4,20 @@ class TwoShape {
     private double height;
     private double widht;
 
+    TwoShape(double h, double w) {
+        this.height = h;
+        this.widht = w;
+    }
+
+    TwoShape() {
+        this.height = 0.0;
+        this.widht = 0.0;
+    }
+
+    TwoShape(double x) {
+        this.height = this.widht = x;
+    }
+
     public double getHeight() {
         return height;
     }
@@ -27,13 +41,23 @@ class TwoShape {
     }
 }
 
-class Triangle extends TwoShape { 
+class Triangle extends TwoShape {
     private String style;
 
-    Triangle(String s, double h, double w){
+    Triangle(String s, double h, double w) {
+        super(h, w); // Вызвать конструктор супер-класса    
         setStyle(s);
-        setHeight(h);
-        setWidht(w);
+
+    }
+
+    Triangle(String s) {
+        super(); // Вызвать конструктор супер-класса по умолчанию
+        setStyle(s);
+    }
+
+    Triangle(String s, double x) {
+        super(x); // Вызвать конструктор супер-класса с одним аргументом
+        setStyle(s);
     }
 
     public String getStyle() {
@@ -55,8 +79,9 @@ class Triangle extends TwoShape {
 
 class Shapes {
     public static void main(String[] args) {
-        Triangle t1 = new Triangle("Закрашенный", 4.0, 2.5);
+        Triangle t1 = new Triangle("Закрашенный");
         Triangle t2 = new Triangle("Пустой", 5.0, 1.0);
+        Triangle t3 = new Triangle("Пустой", 3.0);
 
         // t1.setStyle("Закрашенный");
         // t1.setHeight(4.0);
@@ -77,5 +102,12 @@ class Shapes {
         t2.showStyle();
         t2.showInfo();
         System.out.println("Площадь t2: " + t2.area());
+
+        System.out.println("--------------");
+
+        System.out.println("Инфо t3");
+        t3.showStyle();
+        t3.showInfo();
+        System.out.println("Площадь t3: " + t3.area());
     }
 }
