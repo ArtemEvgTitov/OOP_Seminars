@@ -1,6 +1,6 @@
 package Seminar_02.Task1;
 
-public class Test1 implements Program {
+public class Test1 implements Program, Program2 {
     int start;
     int value;
     int prew;
@@ -26,6 +26,12 @@ public class Test1 implements Program {
 
     int getPrew(){
         return prew;
+    }
+
+    @Override
+    public void reset1() {
+        start = 1;
+        value = 1;
     }
     
 }
