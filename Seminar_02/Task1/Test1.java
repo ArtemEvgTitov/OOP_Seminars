@@ -1,4 +1,4 @@
-package Seminar_02;
+package Seminar_02.Task1;
 
 public class Test1 implements Program {
     int start;

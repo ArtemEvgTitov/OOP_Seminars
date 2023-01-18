@@ -1,4 +1,4 @@
-package Seminar_02;
+package Seminar_02.Task1;
 
 public interface Program {
     int getNext(); // Возвратить следующее по порядку число
