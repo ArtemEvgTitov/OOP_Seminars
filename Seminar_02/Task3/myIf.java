@@ -5,4 +5,7 @@ public interface myIf {
     default int getAdminID(){
         return 1;
     }
+    static int getUniversalID(){
+        return 100500;
+    }
 }
