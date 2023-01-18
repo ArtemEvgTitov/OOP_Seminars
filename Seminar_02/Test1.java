@@ -3,6 +3,7 @@ package Seminar_02;
 public class Test1 implements Program {
     int start;
     int value;
+    int prew;
 
     @Override
     public int getNext() {
@@ -21,6 +22,10 @@ public class Test1 implements Program {
     public void setStart(int x) {
         start = x;
         value = x;
+    }
+
+    int getPrew(){
+        return prew;
     }
     
 }
