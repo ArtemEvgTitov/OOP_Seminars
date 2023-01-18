@@ -5,4 +5,7 @@ public class myIfIm implements myIf {
     public int getUserID() {
         return 100;
     }
+    public int getAdminID(){
+        return 5;
+    }
 }
