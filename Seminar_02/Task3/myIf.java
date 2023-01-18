@@ -1,5 +1,6 @@
 package Seminar_02.Task3;
 
+/**Пробная документация*/
 public interface myIf {
     int getUserID();
     default int getAdminID(){
