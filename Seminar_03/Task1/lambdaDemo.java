@@ -1,4 +1,4 @@
-package Seminar_03;
+package Seminar_03.Task1;
 
 public class lambdaDemo {
     public static void main(String[] args) {
