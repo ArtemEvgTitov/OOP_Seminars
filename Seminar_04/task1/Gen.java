@@ -27,7 +27,7 @@ class GenDemo {
 
         int v = iOb.getOb(); // Присвоили примитиву значение объекта iOb
         System.out.println("Значение: " + v);
-        
+
         System.out.println("-------------");
 
         Gen<String> str = new Gen<String>("Test");

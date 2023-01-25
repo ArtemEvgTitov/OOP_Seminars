@@ -1,33 +1,32 @@
 package Seminar_04.task3;
 
 public class NumericClass<T extends Number> {
-    
+
     T Tnum;
 
-    NumericClass(T n){
+    NumericClass(T n) {
         Tnum = n;
     }
 
-    double getRec(){
-        return 1/Tnum.doubleValue();
+    double getRec() {
+        return 1 / Tnum.doubleValue();
     }
 
-    double getFrac(){
+    double getFrac() {
         return Tnum.doubleValue() - Tnum.intValue();
     }
 
-    boolean absEqual(NumericClass<?> ob){
+    boolean absEqual(NumericClass<?> ob) {
         // Проверить равенство абсолютных значений
-        if(Math.abs(Tnum.doubleValue()) == Math.abs(ob.Tnum.doubleValue())){
+        if (Math.abs(Tnum.doubleValue()) == Math.abs(ob.Tnum.doubleValue())) {
             return true;
-        }
-        else {
+        } else {
             return false;
         }
     }
 }
 
-class Gen3{
+class Gen3 {
     public static void main(String[] args) {
 
         NumericClass<Integer> iOb = new NumericClass<>(6);
@@ -49,7 +48,6 @@ class Gen3{
 
         System.out.println("iOb and dOb: " + iOb.absEqual(dOb));
         System.out.println("iOb and lOb: " + iOb.absEqual(lOb));
-
 
     }
 }

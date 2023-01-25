@@ -6,29 +6,29 @@ public class Gen2<T, V> {
 
     V ob2;
 
-    Gen2(T o1, V o2){
+    Gen2(T o1, V o2) {
         ob1 = o1;
         ob2 = o2;
     }
 
-    void showTypes(){
+    void showTypes() {
         System.out.println("Тип Т это: " + ob1.getClass().getName());
         System.out.println("Тип V это: " + ob2.getClass().getName());
     }
 
-    T getOb1(){
+    T getOb1() {
         return ob1;
     }
 
-    V getOb2(){
+    V getOb2() {
         return ob2;
     }
 }
 
-class SimpGen{
+class SimpGen {
     public static void main(String[] args) {
         Gen2<Integer, String> ob2;
-        ob2 = new Gen2<Integer,String>(100, "ob2 str");
+        ob2 = new Gen2<Integer, String>(100, "ob2 str");
 
         ob2.showTypes();
 
