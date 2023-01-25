@@ -1,7 +1,5 @@
 package Seminar_04.task2;
 
-import javax.swing.SortingFocusTraversalPolicy;
-
 public class Gen2<T, V> {
 
     T ob1;
