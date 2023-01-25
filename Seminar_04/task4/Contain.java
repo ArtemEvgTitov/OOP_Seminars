@@ -6,7 +6,7 @@ public interface Contain<T> {
 
 class Gen4<T> implements Contain<T> {
 
-    T[] arr;
+    T[] arr; // Любой класс реализующий обощённый интерфейс должен быть обощённым
 
     Gen4(T[] o) {
         arr = o;
