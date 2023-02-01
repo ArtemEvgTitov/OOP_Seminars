@@ -6,13 +6,13 @@ public class View {
     
     Scanner scanner = new Scanner(System.in);
 
-    public double getValueX(){
+    public double getValue(String data){
         return scanner.nextDouble();
     }
 
     
 
-    public void show(double value, String data){
+    public void show(String data, double value){
 
         System.out.printf("%s %s", data, value);
     }
