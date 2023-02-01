@@ -7,6 +7,7 @@ public class View {
     Scanner scanner = new Scanner(System.in);
 
     public double getValue(String data){
+        System.out.println(data);
         return scanner.nextDouble();
     }
 
