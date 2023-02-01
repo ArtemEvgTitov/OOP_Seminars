@@ -1,12 +1,13 @@
 package Seminar_05;
 
 import Seminar_05.Console.View;
-import Seminar_05.Model.SumCalc;
-import Seminar_05.Presenter.Presenter;
+import Seminar_05.Model.Mult;
+import Seminar_05.Presenter.PresentOfT;
+
 
 public class Main {
     public static void main(String[] args) {
-        Presenter p = new Presenter(new SumCalc(), new View());
+        PresentOfT<Mult> p = new PresentOfT<>(new Mult(), new View());
         p.buttonClick();
     }
     
