@@ -1,4 +1,4 @@
-package Seminar_05.Console;
+package Seminar_05.Model;
 
 public class Model {
     

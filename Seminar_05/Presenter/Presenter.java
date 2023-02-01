@@ -1,4 +1,7 @@
-package Seminar_05.Console;
+package Seminar_05.Presenter;
+
+import Seminar_05.Console.View;
+import Seminar_05.Model.Model;
 
 public class Presenter {
     View view;
