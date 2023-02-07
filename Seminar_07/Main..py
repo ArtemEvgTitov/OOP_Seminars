@@ -6,16 +6,19 @@ class Point ():
     def sqrt_x(self, x):
         return x*x
 
-    @staticmethod #Статический метод
+    @staticmethod  # Статический метод
     def hello():
         print('Привет')
 
     # @classmethod
-    # def hello_class(cls):
-        
+    def hello_class(cls):
+        print(f'Hello class {cls.__name__}')
+
+
 point = Point()
 
 print(point.x, point.y, point.z)
 print(point.sqrt_x(6))
 point.hello()
 Point.hello()
+Point.hello_class()
