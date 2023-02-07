@@ -12,7 +12,7 @@ class Point ():
 
     # @classmethod
     def hello_class(cls):
-        print(f'Hello class {cls.__name__}')
+        print(f'Hello class {cls.__name__}') #Ссылается на наш класс Point
 
 
 point = Point()
