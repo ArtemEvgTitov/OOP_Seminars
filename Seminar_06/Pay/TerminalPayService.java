@@ -5,7 +5,7 @@ public class TerminalPayService implements CardPayments {
     @Override
     public void payCreditCard() {
         // TODO Auto-generated method stub
-        
+
     }
-    
+
 }
