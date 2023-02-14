@@ -4,7 +4,7 @@ import java.util.Scanner;
 
 import Seminar_05.Console.View;
 import Seminar_05.Model.CalcModel;
-import Seminar_05.Model.SumCalc;
+// import Seminar_05.Model.SumCalc;
 import Seminar_05.Presenter.Presenter;
 
 public class Menu {
